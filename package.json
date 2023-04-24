@@ -1,8 +1,7 @@
 {
   "name": "@yellowspot/vite-plugin-externals",
   "description": "Use to external resources, like webpack externals",
-  "version": "0.1.0",
-  "private": false,
+  "version": "0.1.1",
   "type": "module",
   "files": [
     "dist"
