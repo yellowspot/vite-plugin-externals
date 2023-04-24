@@ -1,0 +1,54 @@
+{
+  "name": "@yellowspot/vite-plugin-externals",
+  "description": "Use to external resources, like webpack externals",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yellowspot/vite-plugin-externals.git"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "external",
+    "global",
+    "resolve"
+  ],
+  "author": "matias@yellowspot.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yellowspot/vite-plugin-externals/issues"
+  },
+  "homepage": "https://github.com/yellowspot/vite-plugin-externals#readme",
+  "engines": {
+    "node": ">= 16.x"
+  },
+  "peerDependencies": {
+    "vite": "4.x"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "typescript": "^4.8.4",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "vite-plugin-optimizer": "1.4.2"
+  }
+}
