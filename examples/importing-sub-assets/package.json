@@ -1,0 +1,22 @@
+{
+  "name": "importing-sub-assets",
+  "description": "app to test issue https://github.com/yellowspot/vite-plugin-externals/issues/1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "@yellowspot/vite-plugin-externals": "0.2.0",
+    "vite": "^4.3.0"
+  },
+  "dependencies": {
+    "view-ui-plus": "^1.3.12",
+    "vue": "^3.2.47",
+    "vue-i18n": "^9.2.2"
+  }
+}
