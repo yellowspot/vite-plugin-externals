@@ -51,6 +51,7 @@
     "vite": "^4.2.1"
   },
   "dependencies": {
+    "escape-string-regexp": "^5.0.0",
     "vite-plugin-optimizer": "1.4.2"
   }
 }

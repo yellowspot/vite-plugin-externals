@@ -1,12 +1,21 @@
 import { type Plugin } from 'vite';
 import optimizer from 'vite-plugin-optimizer';
+import escapeStringRegexp from 'escape-string-regexp';
 
 const NAME = '@yellowspot/vite-plugin-external';
 const CACHE_DIR = `.${NAME.replaceAll('/', '_')}`;
 
 export default function VitePluginExternals(entries = {}) {
   const optimizations = Object.entries(entries).reduce((acc, [key, value]) => {
-    Object.assign(acc, { [key]: `module.exports = ${value};` })
+    const module = () => ({
+      code: `module.exports = ${value};`,
+      alias: {
+        // Use our custom module only on exact match. (e.g. 'react' but not 'react/dom')
+        find: new RegExp(`^${escapeStringRegexp(key)}$`)
+      }
+    });
+
+    Object.assign(acc, { [key]: module })
     return acc;
   }, {});
 
