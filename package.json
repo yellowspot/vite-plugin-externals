@@ -43,7 +43,7 @@
     "node": ">= 16.x"
   },
   "peerDependencies": {
-    "vite": "4.x"
+    "vite": "^4 || ^5"
   },
   "devDependencies": {
     "@types/node": "^18.11.3",
