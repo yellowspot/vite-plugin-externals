@@ -1,7 +1,7 @@
 {
   "name": "@yellowspot/vite-plugin-externals",
   "description": "Use to external resources, like webpack externals",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "files": [
     "dist"
@@ -43,7 +43,7 @@
     "node": ">= 16.x"
   },
   "peerDependencies": {
-    "vite": "^4 || ^5"
+    "vite": "^4 || ^5 || ^6"
   },
   "devDependencies": {
     "@types/node": "^18.11.3",
