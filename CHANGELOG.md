@@ -1,3 +1,7 @@
+## 0.6.0 (2026-05-06)
+
+- Add vite 8 as peer dependency [PR #10](https://github.com/yellowspot/vite-plugin-externals/pull/10)
+
 ## 0.5.0 (2025-07-31)
 
 - Add vite 7 as peer dependency [PR #9](https://github.com/yellowspot/vite-plugin-externals/pull/9)
